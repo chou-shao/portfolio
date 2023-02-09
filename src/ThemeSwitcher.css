@@ -1,0 +1,57 @@
+.theme__switcher-toggle {
+  display: flex;
+
+  padding: 0;
+
+  width: 42px;
+  border-radius: 2rem;
+  border: #f2cc8f 2px solid;
+
+  background-color: white;
+
+  font: inherit;
+}
+
+.theme__switcher-switch {
+  display: inline-block;
+
+  font-size: 0.8rem;
+
+  width: 4ch;
+  height: 4ch;
+
+  border: 2px solid #f2cc8f;
+
+  border-radius: 100%;
+
+  background-color: white;
+}
+
+.app.dark .theme__switcher-toggle {
+  background-color: #161925;
+
+  border: 2px solid #80a1c1;
+}
+.app.dark .theme__switcher-switch {
+  order: 2;
+
+  border: 2px solid #80a1c1;
+
+  background-color: #161925;
+}
+
+.theme__switcher-icon {
+  vertical-align: middle;
+
+  width: 100%;
+
+  font-size: 0.8rem;
+
+  line-height: 2;
+}
+
+@media screen and (min-width: 44rem) {
+  .theme__switcher-toggle {
+   
+  }
+}

@@ -1,0 +1,23 @@
+.skiplink{
+    position: absolute;
+    top: -100%;
+    
+    padding: 2rem; 
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    color: white;
+    text-decoration:none;
+
+
+}
+
+.skiplink:focus, .skiplink:hover{
+    top: inherit;
+    left: 38%;
+}
+
+.skiplink:focus, .skiplink:hover{
+    background-color: var(--link-hover);
+    color: black;
+  }

@@ -1,0 +1,104 @@
+.privacy__main-list{
+    grid-column: span 12;
+
+    margin-right: 2.5rem;
+
+    list-style: none;
+}
+
+.privacy__section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+
+
+.privacy__accordian-row{
+    grid-column:span 12;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.privacy__accordian-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #6d597a;
+    background-color: #f3f3f2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.privacy__accordian-item{
+    border-bottom: none;
+}
+
+.privacy__accordian-item + .privacy__accordian-item {
+    border-bottom: none;
+    border-top: none;
+} 
+
+.privacy__accordian-item + .privacy__accordian-item:nth-last-of-type(1) {
+    border-bottom: 1px solid black;
+} 
+
+
+.privacy__accordian-text{
+    color: black;
+}
+
+.app.dark .privacy__accordian-button{
+    background-color: var(--card-bg);
+    color: var(--font-color);
+}
+
+.app.dark .privacy__text__container, .privacy__text__container--open{
+    color: #6d597a;
+    background-color: #f3f3f2;
+}
+
+
+.privacy__accordian-title{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    text-align: left;
+}
+
+.privacy__accordian-icon{
+    padding-right:1rem;
+
+    font-size:x-large;
+}
+
+.privacy__text__container{
+    grid-column: span 12;
+    display: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+}
+
+.privacy__text__container.privacy__text__container--open{
+    display:inline-block;
+}
+
+
+@media screen and (min-width: 44rem){
+    .privacy__accordian-icon{
+    }
+
+}
+
+
+
+
+

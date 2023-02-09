@@ -1,0 +1,80 @@
+.offers__modal {
+  background-color: #f3f3f2;
+}
+
+.offers__title {
+  color: #6d597a;
+}
+
+.offers__controls {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 2rem;
+}
+.subscribeRef {
+  display: none;
+}
+.unlocked {
+  display: none;
+}
+
+.offers__list {
+  list-style: none;
+}
+
+.offers__open {
+  max-width: fit-content;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 0.75rem;
+  color: white;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.offers__confirm {
+  max-width: fit-content;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 0.75rem;
+  color: white;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.offers__cancel {
+  max-width: fit-content;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 0.75rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.offers__instruction {
+  margin: 1rem;
+}
+.offers__choices {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.app.dark .offers__choices{
+    border:1px solid white;
+}
+
+.app.dark .offers__title {
+  color: var(--font-color);
+}
+
+.app.dark .offers__cancel {
+  background-color: var(--button-cancel);
+}

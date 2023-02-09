@@ -1,0 +1,70 @@
+.restaurant__container {
+  display: flex;
+
+}
+
+.restaurant__panel-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 1rem;
+  margin-right:0;
+
+  background-color: #f3f3f2;
+}
+
+.restaurant__subtitle{
+    margin: 1rem;
+
+    color: #6d597a;
+
+    font-size:1.1rem;
+}
+
+.restaurant__text__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurant__text{
+    margin: 1rem;
+    padding:1rem;
+
+    line-height:1.4rem;
+    font-size: 1rem;
+}
+
+.restaurant__panel-right{
+    margin: 1rem;
+    margin-left:0;
+}
+
+.restaurant__pic{
+    height:100%;
+    width:200px;
+
+    object-fit:cover;
+}
+
+.app.dark .restaurant__panel-left{
+    background-color: var(--card--bg);
+    color: var(--font-color);
+}
+
+.app.dark .restaurant__subtitle{
+    color: var(--font-color);
+}
+
+@media screen and (min-width: 44rem){
+    .restaurant__panel-right{
+        transform: translateY(-20px);
+    }
+
+
+    .restaurant__pic{
+        /* height: unset; */
+        width:420px;
+    }
+
+}

@@ -1,0 +1,28 @@
+.app{
+  display: grid;
+  grid-template-areas: 1fr auto 1fr;
+  
+  height:100%;
+
+  background-color: var(--primary-bg);
+
+  color: var(--font-color);
+}
+
+
+
+
+.app.dark{
+  --primary-bg:#0D151C;
+  --header-bg: #060A0E;
+  
+  --font-color: #EBEBEB;
+
+  --card-bg: #393e41;
+
+  --link-hover: rgba(255, 255, 255, 0.6);
+
+  --button-cancel: #F4807C;
+
+
+}

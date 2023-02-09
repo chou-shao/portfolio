@@ -1,0 +1,38 @@
+.footer{
+    background-color: var(--header-bg);
+}
+
+.footer__nav__list{
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-item{
+    width: fit-content;
+    
+    padding: 0.5rem;
+
+    list-style:none;
+
+}
+
+.footer__nav-link{
+    color: #EBEBEB;
+    text-decoration:none;
+    line-height: 1.2rem;
+}
+
+.footer__nav-link:hover,.footer__nav-link:focus  {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+
+
+
+@media screen and (min-width: 44rem){
+    .footer__nav__list{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
