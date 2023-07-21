@@ -1,90 +1,75 @@
-.header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.menubar {
+  display: flex;
+  align-items: center;
 
-  background-color: var(--header-bg);
-}
-
-.header__nav-list {
-  grid-column: span 1;
-  padding: 0;
   margin: 0;
 
-  list-style: none;
+  width: 100%;
+  height: 60px;
 
-  line-height: 1.6;
+  border-bottom: 1px solid black;
 }
 
-.header__theme-switcher {
-  grid-column: span 1;
-
+.menubar__links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0 auto;
+
+  width:100%;
+
+  list-style: none;
 }
 
-.header__title {
-  grid-column: span 10;
-
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-
-  text-align: center;
+.menubar__item {
+  margin-right: 2rem;
+  min-width: 80px;
 }
 
-.header__icon {
-  grid-column: span 1;
+.menubar__item a {
+  padding: 2rem 2rem;
 
-  width: 100px;
-  height: 100px;
+  text-decoration: none;
 
-  object-fit: cover;
+  color: #333;
+  font-weight: bold;
 }
 
-.header__subtitle {
-  grid-column: span 10;
+.skip-to-main {
+  position: absolute;
+  top: -100%;
 
-  margin-top:0;
-  margin-bottom: 1rem;
-  text-align: center;
+  padding: 2rem;
 
+  text-decoration: none;
 }
 
-.global-nav__button {
-  min-width: 54px;
-  min-height: 54px;
+.skip-to-main:focus,
+.skip-to-main:hover {
+  top: inherit;
+  left: 40%;
 }
 
-@media screen and (min-width: 44rem) {
-  .header__nav {
-    grid-column: span 12;
-  }
+.logout-form__button {
+  padding: 2rem 2rem;
 
-  .header__title {
-    grid-column: span 11;
-  }
+  background-color: transparent;
+  border: none;
 
-  .header__theme-switcher {
-    display: inline-block;
-  }
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
 
-  .header__subtitle {
-    grid-column: span 11;
-  }
+  cursor: pointer;
+  text-decoration: none;
+}
 
-  .header__nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    padding: 0;
-    margin: 0 2rem 0 2rem;
-
-    list-style: none;
-  }
-
-  .header__nav-item {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+.logout-form__button:hover,
+.logout-form__button:focus,
+.menubar__item a:hover,
+.menubar__item a:focus {
+  color: #007bff;
 }

@@ -1,0 +1,97 @@
+.account__container {
+  margin: 2rem;
+}
+
+.account__container {
+  display: flex;
+}
+
+.account__sidebar {
+  flex: 0 0 200px;
+  padding: 1rem;
+}
+
+.account__content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.account__tabs {
+  list-style: none;
+  padding: 0;
+}
+
+.account__tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.account__tab.active {
+  font-weight: bold;
+}
+
+.order-history {
+  width: 100%;
+}
+
+.order-list__separator {
+  border-bottom: 1px solid #333;
+}
+
+.order-history__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.order-history__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.order-history__details {
+  display: flex;
+  align-items: center;
+}
+
+.order-item__image-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  object-fit: cover;
+  object-position: 45% 65%;
+}
+
+.order-item__image {
+  margin-right: 1rem;
+
+  width: 300px;
+  height: 200px;
+
+  object-fit: cover;
+
+  object-position: 45% 65%;
+}
+
+.order-history__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-summary__container {
+  margin: 0 auto;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+}
+
+.order-list,
+.order-item {
+  margin: 0;
+  padding: 0;
+}

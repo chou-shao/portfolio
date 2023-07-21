@@ -1,0 +1,43 @@
+.card-details__title {
+  padding: 1rem 0 0 0;
+
+  border-bottom: 1px solid #333;
+
+  font-size: smaller;
+}
+
+.card-details__form__container {
+  max-width: 600px;
+}
+
+.card-details__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+.card-details__field-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card-details__input {
+  max-width: 200px;
+}
+
+.card-details__label {
+  margin-bottom: 5px;
+}
+
+.card-details__expiration-row {
+  grid-column: span 2;
+}
+
+.error-message {
+  color: red;
+}

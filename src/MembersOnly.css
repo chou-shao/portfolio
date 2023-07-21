@@ -1,0 +1,7 @@
+.members-only__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin: 2rem;
+}
